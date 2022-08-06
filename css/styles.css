@@ -19,7 +19,6 @@
 /* body спільний для обох сторінок */
 
 body {
-  color: var(--primary-background-color);
   font-family: 'Roboto', sans-serif;
 }
 
@@ -56,6 +55,11 @@ img {
   clip: rect(0 0 0 0);
   clip-path: inset(50%);
   margin: -1px;
+}
+
+input {
+  margin: 0;
+  padding: 0;
 }
 
 /* Загальний контейнер */
@@ -506,6 +510,95 @@ img {
   border-radius: 50%;
 }
 
+.modal-title {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: calc(23 / 20);
+  text-align: center;
+  letter-spacing: 0.03em;
+  margin-bottom: 12px;
+
+  color: var(--primary-text-color);
+}
+
+.modal-form {
+  width: 448px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0;
+}
+
+.form-div {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-div label {
+  margin-bottom: 4px;
+  font-size: 12px;
+  line-height: calc(14 / 12);
+  letter-spacing: 0.01em;
+
+  color: var(--secondary-text-color);
+}
+
+.form-div input {
+  margin-bottom: 10px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+}
+
+/* .form-div input::placeholder {
+} */
+
+.form-div textarea {
+  padding: 12px 16px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+}
+
+.form-div textarea::placeholder {
+  font-size: 12px;
+  line-height: calc(14 / 12);
+  letter-spacing: 0.01em;
+  color: rgba(117, 117, 117, 0.5);
+}
+
+.check-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 0 30px;
+}
+
+.check-box label {
+  font-size: 14px;
+  line-height: calc(24 / 14);
+  letter-spacing: 0.03em;
+  margin-left: 7px;
+
+  color: var(--secondary-text-color);
+}
+
+.agreement-btn {
+  display: flex;
+  margin: 0 auto;
+  padding: 10px 52px;
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: calc(30 / 16);
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+
+  color: var(--tertiary-text-color);
+  background-color: var(--active-link-color);
+  cursor: pointer;
+  border: transparent;
+  border-radius: 4px;
+}
+
 /* Строрінка Портфоліо */
 
 .filter-list {
@@ -674,6 +767,10 @@ img {
   color: var(--tertiary-text-color);
 }
 
+.footer-with-caller {
+  margin-right: 93px;
+}
+
 .footer-caller {
   font-weight: 700;
   font-size: 14px;
@@ -712,4 +809,49 @@ img {
 
 .footer-caller-icon {
   fill: var(--tertiary-text-color);
+}
+
+.user-email-div {
+  display: flex;
+}
+
+.user-email-div input {
+  padding: 15px 16px;
+  margin-right: 12px;
+  background-color: transparent;
+  width: 358px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 4px;
+  color: var(--tertiary-text-color);
+}
+
+.user-email-div input::placeholder {
+  font-size: 16px;
+  line-height: calc(20 / 16);
+  letter-spacing: 0.03em;
+
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.subscription-btn {
+  display: flex;
+  margin: 0 auto;
+  padding: 10px 28px;
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: calc(30 / 16);
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+
+  color: var(--tertiary-text-color);
+  background-color: var(--active-link-color);
+  cursor: pointer;
+  border: transparent;
+  border-radius: 4px;
+}
+
+.send-icon {
+  margin-left: 10px;
 }
