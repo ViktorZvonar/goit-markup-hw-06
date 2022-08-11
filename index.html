@@ -447,13 +447,19 @@
           </div>
 
           <div class="check-box-div">
-            <input type="checkbox" class="check-box" name="checkbox" id="agreement" />
-            <div class="icon-div"></div>
-            <svg class="check-icon2" width="16" height="15">
-              <use href="./images/icons.svg#icon-check2"></use>
-            </svg>
+            <input
+              type="checkbox"
+              class="check-box visually-hidden"
+              name="checkbox"
+              id="agreement"
+              value="true"
+            />
+
             <label for="agreement"
-              >Погоджуюся з розсилкою та приймаю
+              ><span class="chech-span"
+                ><svg class="check-icon" width="13" height="10">
+                  <use href="./images/icons.svg#icon-check2"></use></svg></span
+              >Погоджуюся з розсилкою та приймаю&nbsp
               <a href="./" class="terms"><span class="terms-text">Умови договору</span></a></label
             >
           </div>
