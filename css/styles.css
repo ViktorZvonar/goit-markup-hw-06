@@ -653,7 +653,7 @@ textarea {
   border-radius: 2px;
 }
 
-.check-box:checked .icon-div {
+.check-box:checked + .icon-div {
   background-color: var(--active-link-color);
   border: 1px solid var(--active-link-color);
 }
