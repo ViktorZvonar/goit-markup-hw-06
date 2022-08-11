@@ -485,6 +485,7 @@ textarea {
   position: absolute;
   top: 50%;
   left: 50%;
+  padding: 40px;
 
   height: 581px;
   width: 528px;
@@ -502,22 +503,29 @@ textarea {
 }
 
 .close-button-modal {
-  display: flex;
-  margin: 8px 8px 0 auto;
+  position: absolute;
+  right: 8px;
+  top: 8px;
+  width: 30px;
+  height: 30px;
   border: 1px solid #0000001a;
-  background-color: var(--primary-background-color);
-
-  padding: 10px;
-  cursor: pointer;
   border-radius: 50%;
-}
+  outline: none;
 
-.close-button-icon {
+  background-color: transparent;
+
+  cursor: pointer;
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.close-button-icon:hover,
-.close-button-icon:focus {
+.close-button-icon {
+  fill: var(--accent-color);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  outline: none;
+}
+
+.close-button-modal:focus .close-button-icon,
+.close-button-modal:hover .close-button-icon {
   fill: var(--active-link-color);
 }
 
@@ -530,13 +538,6 @@ textarea {
   margin-bottom: 12px;
 
   color: var(--primary-text-color);
-}
-
-.modal-form {
-  width: 448px;
-  margin-left: auto;
-  margin-right: auto;
-  padding: 0;
 }
 
 .form-div {
@@ -588,11 +589,13 @@ textarea {
 }
 
 .form-div textarea {
+  height: 120px;
   padding: 12px 16px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
   cursor: pointer;
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  resize: none;
 }
 
 .form-div textarea::placeholder {
@@ -650,13 +653,12 @@ textarea {
   border-radius: 2px;
 }
 
-.check-box:checked + .icon-div {
+.check-box:checked .icon-div {
   background-color: var(--active-link-color);
   border: 1px solid var(--active-link-color);
 }
 
 .check-box:focus + .icon-div {
-  background-color: var(--active-link-color);
   border-color: var(--active-link-color);
 }
 
@@ -669,7 +671,7 @@ textarea {
 
 .agreement-btn {
   display: flex;
-  margin: 0 auto;
+  margin: auto;
   padding: 10px 52px;
   font-family: inherit;
   font-weight: 700;
@@ -900,6 +902,7 @@ textarea {
 
 .user-email-div {
   display: flex;
+  justify-content: end;
 }
 
 .user-email-div input {
@@ -922,7 +925,6 @@ textarea {
 
 .subscription-btn {
   display: flex;
-  margin: 0 auto;
   padding: 10px 28px;
   font-family: inherit;
   font-weight: 700;
