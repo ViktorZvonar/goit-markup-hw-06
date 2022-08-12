@@ -852,10 +852,6 @@ textarea {
   color: var(--tertiary-text-color);
 }
 
-.footer-with-caller {
-  margin-right: 93px;
-}
-
 .footer-caller {
   font-weight: 700;
   font-size: 14px;
@@ -894,6 +890,10 @@ textarea {
 
 .footer-caller-icon {
   fill: var(--tertiary-text-color);
+}
+
+.footer-with-subscription {
+  margin-left: auto;
 }
 
 .user-email-div {
